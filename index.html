@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog motoryzacyjny</title>
+
+    <meta name="theme-color" content="#8f8e8e">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+    <header class="header-image1" id="test1">
+        <div class="text" id="text">
+            <h1>Blog motoryzacyjny</h1>
+            <h2>Znaczenie loga różnych marek</h2>
+        </div>
+        <a href="#main">Zobacz więcej</a>
+    </header>
+
+    <header class="header-image2" id="test2">
+    </header>
+
+
+    <main id="main">
+        <section class="samochody flex_column_container">
+            <h2>Samochody</h2>
+            <div class="all_places">
+                <div class="single_place">
+                    <h3>Ferrari</h3>
+                    <img src="./img/ferrari.jpg" alt="">
+                    <p> Logo producenta pochodzi z emblematu, jaki miał na swoim samolocie włoski pilot z 
+                        czasów I wojny światowej, Francesco Baracca. Enzo Ferrari, będąc pod wrażeniem jego
+                         umiejętności, użył tego samego symbolu czarnego rumaka, stojącego na dwóch tylnych
+                          nogach. Taki koń jest uważany we Włoszech za symbol szczęścia. Tylko jaki jest powód?</p>
+                    <a href="ferrari.html">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Projekt WSB</p>
+    </footer>
+    <script src="sw.js"></script>
+    <script type="text/javascript">
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+
+            text.style.marginTop = value * 1.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>

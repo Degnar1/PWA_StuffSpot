@@ -1,0 +1,17 @@
+{
+    "name": "Moto Blog",
+    "short_name": "motoblog",
+    "theme_color": "#8f8e8e",
+    "background_color": "#8f8e8e",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/PWA_ININ3_PR1/index.html",
+    "description": "Blog motoryzacyjny w ramach projektu WSB",
+    "icons": [
+        {
+            "src": "./img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+} 

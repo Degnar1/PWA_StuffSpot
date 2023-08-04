@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+} 
+
+.flex_column_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #cccbcb;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative; /* Dodano pozycjonowanie względem rodzica */
+}
+
+.header-image1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/porsche.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-image1 h1,
+.header-image1 h2 {
+    position: absolute;
+    z-index: 2;
+}
+
+.header-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-image2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 4;
+}
+
+header h1 {
+    position: absolute;
+    margin-left: -170px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    color: white;
+    z-index: 6;
+    font-size: 33px;
+}
+
+header h2 {
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 50px;
+    z-index: 6;
+    color: white;
+    font-size: 28px;
+}
+
+header a {
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 10;
+    color: #bbbbbb;
+}
+
+.ferrari {
+    padding: 15px;
+}
+
+.ferrari img {
+    width: 100%;
+}
+
+.single_method img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.single_method p{
+    line-height: 1.8;
+}
+
+.single_place {
+    margin: 10px 0;
+}
+
+.single_place img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.single_place p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #8f8e8e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (min-width: 768px) {
+    .all_places {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .single_place {
+        width: 50%;
+        margin: 30px;
+    }
+
+    .single_place img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .single_place {
+        width: 30%;
+    }
+}
+
+.all_places{
+    padding: 10px;
+}
+
+a[href="ferrari.html"] {
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #bbbbbb;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+a[href="lamborghini.html"] {
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #bbbbbb;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a[href="hyundai.html"] {
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #bbbbbb;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a[href="bmw.html"] {
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #bbbbbb;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
